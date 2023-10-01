@@ -39,26 +39,26 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/pnc-financials.git
+       git clone https://github.com/your-username/pnc-financials.git
 
 
 2. Navigate to the project directory:
 
-    cd pnc-financials
+        cd pnc-financials
 
 3. Install server dependencies:
 
-    npm install
+        npm install
 
 4. Navigate to the client directory and install client dependencies
 
-    cd client
-    npm install
+        cd client
+        npm install
 
 5. Create a .env file in the project root directory and configure your environment variables, including your MongoDB URI, API keys (if necessary), and other sensitive information.
 
 6. Start the development server:
-     npm run dev
+         npm run dev
 
 Your application should now be running. You can access it at http://localhost:3000.
 
@@ -77,12 +77,12 @@ Your application should now be running. You can access it at http://localhost:30
 - **User Dashboard:** Access your personalized dashboard for an overview of your account.
 
 ### Technologies Used
-- **Frontend:** React, Redux, HTML5, CSS3
+- **Frontend:** React, Redux, HTML5, CSS3, Tailwind
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 - **Authentication:** JSON Web Tokens (JWT)
 - **APIs:** Integration with cryptocurrency market data APIs (e.g., CoinGecko, CoinMarketCap)
-- **Deployment:** Heroku, Netlify (or your preferred hosting platforms)
+- **Deployment:** Heroku, Netlify or Firebase
 
 ### Contributing
 **Contributions are welcome!** If you'd like to contribute to PNC Financials, please follow these steps:
