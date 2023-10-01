@@ -44,26 +44,26 @@ Before you begin, ensure you have met the following requirements:
 
 2. Navigate to the project directory:
 
-  cd pnc-financials
+    cd pnc-financials
 
 3. Install server dependencies:
 
-  npm install
+    npm install
 
 4. Navigate to the client directory and install client dependencies
 
-  cd client
-  npm install
+    cd client
+    npm install
 
 5. Create a .env file in the project root directory and configure your environment variables, including your MongoDB URI, API keys (if necessary), and other sensitive information.
 
 6. Start the development server:
-   npm run dev
+     npm run dev
 
 Your application should now be running. You can access it at http://localhost:3000.
 
 
-### Usage
+## Usage
 - **User Registration:** Sign up for an account on PNC Financials using a valid email address.
 
 - **User Login:** Log in to your account securely.
