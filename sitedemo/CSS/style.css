@@ -11,13 +11,6 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
-body {
-    background-color: var(--grey-light);
-}
-/* .container {
-    max-width: 2000px;
-    margin: 0 auto;
-} */
 
 
 /*--------------- CUSTOM VARIABLES ---------------*/
@@ -286,7 +279,7 @@ header nav .right-navigation li a:hover #globe {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(assets/images/hero-financial-wellness_muted.jpeg);
+    background-image: url(../images/images/hero-financial-wellness_muted.jpeg);
     padding-block: 50px 70px;
 }
 
@@ -349,7 +342,6 @@ header nav .right-navigation li a:hover #globe {
 
 /*----------- INSIGHTS -----------*/
 .insight {
-    width: 100%;
     height: fit-content;
     width: 80%;
     margin: 0 auto;
