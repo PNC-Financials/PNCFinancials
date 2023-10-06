@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { userReducer } from "./redux/userSlice";
 // import { ThemeProvider } from "styled-components";
 import { light, dark } from "./redux/theme";
-import { MyComponent } from "./components";
+// import { MyComponent } from "./components";
 <script src="http://192.168.56.1:8097"></script>
 
 function Layout() {
