@@ -29,12 +29,12 @@ body {
 /*----------- HEADER NAVIGATION START -----------*/
 header {
     width: 100%;
-    height: fit-content;
-    padding-block: 20px;
+    height: 150px;
+    /* padding-block: 20px; */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: end;
-
     background-color: var(--grey-light);
 }
 
