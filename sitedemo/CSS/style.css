@@ -11,6 +11,9 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
+body {
+    background-color: var(--grey-light);
+}
 
 /*--------------- CUSTOM VARIABLES ---------------*/
 :root {
@@ -26,7 +29,12 @@
 /*----------- HEADER NAVIGATION START -----------*/
 header {
     width: 100%;
-    height: 70px;
+    height: fit-content;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
     background-color: var(--grey-light);
 }
 
@@ -98,10 +106,27 @@ header nav .right-navigation li a:hover #globe {
 
 /*--------- LOGIN & SIGN UP ---------*/
 .login-signup {
-    position: sticky;
-    width: 300px;
-    top: 0;
-    background-color: var(--grey);
+    position: relative;
+    right: 2px;
+    width: fit-content;
+    display: flex;
+    background-color: var(--grey-light);
+    z-index: 100;
+}
+
+.login-signup a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 20px;
+    color: var(--white);
+    text-decoration: none;
+    transition: 400ms;
+}
+.login-signup a:hover {
+    background-color: rgb(45, 57, 67, 0.7);
 }
 
 
@@ -114,7 +139,7 @@ header nav .right-navigation li a:hover #globe {
     background-size: cover;
 }
 
-.hero div {
+.hero .wrapper {
     position: relative;
     background-color: #ffffff12;
     width: 650px;
@@ -127,10 +152,10 @@ header nav .right-navigation li a:hover #globe {
     padding: 45px 180px;
     border-radius: 10px;
     box-shadow: 5px 5px 55px #00000054;
-    transform: translate(15%, 25%);
+    transform: translate(15%, 15%);
 }
 
-.hero div:before {
+.hero .wrapper:before {
     content: '';
     position: absolute;
     inset: 0;
@@ -139,20 +164,20 @@ header nav .right-navigation li a:hover #globe {
     z-index: -1;
 }
 
-.hero div h1 {
+.hero .wrapper h1 {
     font-size: 2.75rem;
     color: var(--white);
     text-shadow: 0px 0px 10px #0000009f;
 }
 
-.hero div p {
+.hero .wrapper p {
     color: var(--white);
     /* color: #000; */
     font-weight: 500;
     letter-spacing: 0.05rem;
 }
 
-.hero div .btn {
+.hero .wrapper .btn {
     position: relative;
     /* background-color: #0069aa; */
     border: 2px solid var(--white);
@@ -167,7 +192,7 @@ header nav .right-navigation li a:hover #globe {
     overflow: hidden;
 }
 
-.hero div .btn::before {
+.hero .wrapper .btn::before {
     content: '';
     position: absolute;
     inset: -2px;
@@ -179,12 +204,12 @@ header nav .right-navigation li a:hover #globe {
     transition: translate 300ms ease-out;
 }
 
-.hero div .btn:hover {
+.hero .wrapper .btn:hover {
     color: var(--orange);
     box-shadow: 0px 0px 10px #0000007d;
 }
 
-.hero div .btn:hover::before {
+.hero .wrapper .btn:hover::before {
     translate: -30%;
 }
 
