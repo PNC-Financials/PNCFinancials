@@ -10,6 +10,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    /* outline: 1px solid red; */
 }
 
 
@@ -43,6 +44,7 @@ header nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
+    border-bottom: 1px solid #ffffff3e;
 }
 
 header nav #logo img {
@@ -102,14 +104,188 @@ header nav .right-navigation li a:hover #globe {
 }
 
 
+/* <reset-style> ============================ */
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ============================ */
+/* OPEN MENU======== */
+.menu__open {
+    width: 42px;
+    height: 32px;
+    padding: 4px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__open span {
+    width: 100%;
+    height: 0.125rem;
+    border-radius: 0.125rem;
+    background-color: #fff;
+    box-shadow: 0 .5px 2px 0 hsla(0, 0%, 0%, .2);
+    transition: .4s;
+}
+
+.menu__open:focus span:nth-child(1) {
+    transform: translateY(11px) rotate(-45deg);
+}
+
+.menu__open:focus span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu__open:focus span:nth-child(3) {
+    transform: translateY(-11px) rotate(45deg);
+}
+
+.nav-dropdown:focus-within .menu-content {
+    transform: translateY(0%);
+}
+
+
+
+/* CLOSE MENU */
+.menu__close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 42px;
+    height: 32px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__close span {
+    width: 100%;
+    height: 0.125rem;
+    border-radius: 0.125rem;
+    background-color: #fff;
+    box-shadow: 0 .5px 2px 0 hsla(0, 0%, 0%, .2);
+    transition: .4s;
+}
+
+.menu__close span:nth-child(1) {
+    transform: translateY(11px) rotate(-45deg);
+}
+
+.menu__close span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu__close span:nth-child(3) {
+    transform: translateY(-11px) rotate(45deg);
+}
+
+
+.menu__close:focus span:nth-child(1) {
+    transform: translateY(0px) rotate(0deg);
+}
+
+.menu__close:focus span:nth-child(2) {
+    opacity: 1;
+}
+
+.menu__close:focus span:nth-child(3) {
+    transform: translateY(0px) rotate(0deg);
+}
+
+.nav-dropdown:focus-within .menu-content {
+    transform: translateY(0%);
+}
+
+
+
+
+
+
+.line {
+    height: 2px;
+    width: 30%;
+    background-color: #ffffff52;
+}
+
+.menu-content {
+    position: absolute;
+    inset: 0;
+    background-color: var(--grey);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(-100%);
+    transition: 400ms;
+    transition-delay: 400ms;
+
+
+    z-index: 10;
+}
+
+.menu-content .nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-content .nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.menu-content .nav ul li a {
+    font-size: 1rem;
+    padding-inline: 10px;
+    width: 100%;
+}
+
+.menu-content .links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-content .links ul li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.menu-content .links ul li a {
+    font-size: 0.75rem;
+    padding-inline: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
+
 /*--------- LOGIN & SIGN UP ---------*/
 .login-signup {
     position: relative;
-    right: 2px;
+    right: 50px;
     width: fit-content;
     display: flex;
     background-color: var(--grey-light);
-    z-index: 100;
 }
 
 .login-signup a {
@@ -123,6 +299,7 @@ header nav .right-navigation li a:hover #globe {
     text-decoration: none;
     transition: 400ms;
 }
+
 .login-signup a:hover {
     background-color: rgb(45, 57, 67, 0.7);
 }
@@ -170,7 +347,6 @@ header nav .right-navigation li a:hover #globe {
 
 .hero .wrapper p {
     color: var(--white);
-    /* color: #000; */
     font-weight: 500;
     letter-spacing: 0.05rem;
 }
@@ -253,6 +429,7 @@ header nav .right-navigation li a:hover #globe {
 .service-list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     width: 80%;
     justify-content: space-evenly;
     padding-top: 20px;
@@ -262,6 +439,11 @@ header nav .right-navigation li a:hover #globe {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3px;
+}
+
+.service-list .bitcoin img {
+    width: 20%;
 }
 
 .service-list .service a {
@@ -284,9 +466,9 @@ header nav .right-navigation li a:hover #globe {
 }
 
 .financial-wellness div {
-    background-color: #ffffff50;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 30px #0000007d;
+    position: relative;
+    background-color: #ffffff40;
+    box-shadow: 5px 5px 55px #00000054;
     padding: 50px;
     width: 60%;
     border-radius: 10px;
@@ -294,6 +476,18 @@ header nav .right-navigation li a:hover #globe {
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    z-index: 1;
+}
+
+.financial-wellness div::before {
+    content: '';
+    position: absolute;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    border-radius: 10px;
+    z-index: -1;
 }
 
 .financial-wellness h1 {
@@ -303,6 +497,7 @@ header nav .right-navigation li a:hover #globe {
     color: var(--grey);
     margin-bottom: 15px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .financial-wellness h1::after {
@@ -385,6 +580,7 @@ header nav .right-navigation li a:hover #globe {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    width: 100%;
 }
 
 .card {
@@ -398,14 +594,17 @@ header nav .right-navigation li a:hover #globe {
     color: inherit;
     border-radius: 10px;
 }
+
 .card-img {
     overflow: hidden;
     border-radius: 10px;
 }
+
 .card-img img {
     width: 100%;
     transition: 400ms;
 }
+
 .card:hover .card-img img {
     scale: 1.1;
 }
@@ -416,87 +615,23 @@ header nav .right-navigation li a:hover #globe {
     text-decoration: underline;
     margin-block: 10px 15px;
 }
+
 .card span {
     margin-bottom: 10px;
+    line-height: 1.5rem;
+    letter-spacing: .05rem;
 }
+
 .card i {
     font-size: 0.75rem;
     font-weight: 600;
 }
+
 .insight .view-more {
     text-align: start;
-    width: 100%;
+    width: fit-content;
     color: #084D77;
     margin-top: 35px;
-}
-
-
-
-
-/*---------- MOBILE APP ----------*/
-.mobile-apps {
-    width: 100%;
-    height: fit-content;
-    background-color: #415A76;
-    padding: 50px 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.mobile-apps h1 {
-    position: relative;
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: var(--white);
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-}
-
-.mobile-apps h1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 70%;
-    margin: 0 auto;
-    height: 3px;
-    background-color: var(--orange);
-}
-
-.mobile-apps p {
-    font-size: 1.75rem;
-    font-weight: 300;
-    color: var(--white);
-    text-align: center;
-    margin-bottom: 35px;
-}
-.mobile-apps .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
-.mobile-apps .wrapper img {
-    width: 30%;
-}
-.mobile-apps .wrapper .content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-.mobile-apps .wrapper .content span {
-    font-size: 1.25rem;
-    color: var(--white);
-    width: 80%;
-}
-.mobile-apps .wrapper .content .learn-more {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 1.25rem;
-}
-.mobile-apps .wrapper .content .learn-more:hover {
-    text-decoration: underline;
 }
 
 
@@ -513,6 +648,7 @@ header nav .right-navigation li a:hover #globe {
     text-align: center;
     gap: 30px;
 }
+
 .contact-us h1 {
     position: relative;
     font-size: 2.5rem;
@@ -540,6 +676,7 @@ header nav .right-navigation li a:hover #globe {
     justify-content: space-between;
     width: 80%;
 }
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -549,13 +686,17 @@ header nav .right-navigation li a:hover #globe {
     text-align: center;
     color: var(--white);
 }
+
 .contact h2 {
     font-size: 2.125rem;
 }
+
 .contact p {
     font-size: 1.125rem;
     font-weight: 300;
+    line-height: 1.3rem;
 }
+
 .contact a {
     display: flex;
     align-items: center;
@@ -564,6 +705,7 @@ header nav .right-navigation li a:hover #globe {
     text-decoration: none;
     font-size: 1.125rem;
 }
+
 .contact a:hover span:first-child {
     text-decoration: underline;
 }
@@ -573,8 +715,9 @@ header nav .right-navigation li a:hover #globe {
 .legal-disclosures {
     width: 100%;
     height: fit-content;
-    background-color: var(--grey);
+    background-color: var(--grey-light);
 }
+
 .legal-disclosures button {
     width: 100%;
     display: flex;
@@ -587,43 +730,274 @@ header nav .right-navigation li a:hover #globe {
     border-bottom: 2px solid var(--white);
     cursor: pointer;
 }
+
 .legal-disclosures button:hover {
     background-color: var(--grey-light);
 }
+
 .legal-disclosures button span {
     color: #fff;
     font-size: 1.5rem;
 }
+
 .legal-disclosures button .add {
     display: none;
 }
+
 .legal-disclosures .legal-content {
     background-color: var(--grey-light);
     color: var(--white);
-    padding: 70px 150px;
+    width: 80%;
+    padding: 70px 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2.25rem;
     line-height: 23px;
 }
+
 .legal-disclosures .legal-content img {
     width: 60px;
 }
+
 .legal-disclosures .legal-content span,
 .legal-disclosures .legal-content ol {
     font-weight: 300;
+    line-height: 1.75rem;
 }
+
 .legal-disclosures .legal-content a {
     color: #fff;
     font-weight: 400;
 }
 
-/* .legal-disclosures:focus-within .legal-content {
-    display: flex;
+
+
+/*---------- RESPONSIVENESS ----------*/
+/* ================================== */
+@media (width <=1240px) {
+    header nav #logo img {
+        width: 80px;
+    }
+
+    header nav ul li a {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    header nav ul li {
+        padding-inline: 10px;
+    }
 }
-.legal-disclosures:focus-within .remove {
-    display: none;
+
+@media (width <=1140px) {
+    .financial-wellness div {
+        padding: 20px;
+    }
+
+    .financial-wellness div {
+        width: 70%;
+    }
+
+    .contacts-options {
+        width: 100%;
+    }
 }
-.legal-disclosures:focus-within .add {
-    display: block;
-} */
+
+@media (width <=1024px) {
+    .right-navigation {
+        display: none;
+    }
+
+    .menu__open {
+        display: flex;
+    }
+
+    .menu-content .nav,
+    .line {
+        display: none;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+        gap: 70px;
+        width: 70%;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .financial-wellness div {
+        width: 75%;
+    }
+
+    .contact img {
+        width: 20%;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact a {
+        font-size: 1rem;
+    }
+}
+
+@media (width <=892px) {
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .wrapper {
+        width: 85%;
+        transform: translate(0%);
+        padding: 85px 100px;
+    }
+
+    .service-list {
+        width: 50%;
+        gap: 15px;
+    }
+
+    .service {
+        padding-top: 20px;
+    }
+
+    .financial-wellness div {
+        width: 85%;
+    }
+
+    .contact img {
+        width: 17%;
+    }
+
+    .contact h2 {
+        font-size: 1.75rem;
+    }
+
+    .contact a {
+        font-size: 1rem;
+    }
+}
+
+@media (width <=768px) {
+    .center-navigation {
+        display: none;
+    }
+
+    .menu-content .nav,
+    .line {
+        display: flex;
+    }
+
+    .hero .wrapper {
+        padding: 75px 50px;
+    }
+
+    .financial-wellness p {
+        font-size: 1.5rem;
+    }
+
+    .financial-wellness div {
+        width: 90%;
+    }
+
+    .card-container {
+        width: 80%;
+    }
+
+    .contacts-options {
+        flex-direction: column;
+        gap: 70px;
+        width: 100%;
+    }
+
+    .contact {
+        width: 40%;
+    }
+}
+
+@media (width <=618px) {
+    .contact {
+        width: 50%;
+    }
+}
+
+@media (max-width <=478px) {
+    .contact {
+        width: 100%;
+    }
+    .contact p {
+        font-size: 0.5rem;
+    }
+}
+
+@media (width <=453px) {
+    .service-list {
+        width: 55%;
+        gap: 15px;
+    }
+
+    .service {
+        padding-top: 20px;
+    }
+}
+
+@media (width <=425px) {
+    .service-list {
+        flex-direction: column;
+    }
+
+    .products-and-services h1,
+    .financial-wellness h1,
+    .insight h1,
+    .hero .wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .products-and-services h3,
+    .insight p {
+        font-size: 1.25rem;
+    }
+
+    .contact p {
+        font-weight: 100;
+    }
+
+    .hero .wrapper {
+        padding: 30px;
+    }
+
+    .hero .wrapper p {
+        font-size: .9rem;
+    }
+
+    .hero .wrapper .btn {
+        font-size: .9rem;
+    }
+
+    .financial-wellness a {
+        font-size: .9rem;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+}
+
+@media (width <=375px) {
+    .financial-wellness p {
+        font-size: 1.25em;
+    }
+
+}
+
+@media (width <=320px) {
+    .financial-wellness h1 {
+        font-size: 1.75rem;
+    }
+}
