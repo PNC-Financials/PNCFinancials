@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="165px" height="165px" viewBox="0 0 165 165" style="enable-background:new 0 0 165 165;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#566875;}
+	.st2{fill:#F2F2F2;}
+	.st3{fill:#99B4C4;}
+	.st4{fill:url(#SVGID_1_);}
+	.st5{fill:#FFFFFF;}
+	.st6{fill:#F58025;}
+	.st7{fill:none;stroke:#566875;stroke-width:1.3364;stroke-linecap:round;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#FFFFFF;stroke-width:1.3364;stroke-linecap:round;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#566875;stroke-width:1.8123;stroke-linecap:round;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#566875;stroke-width:2.0456;stroke-miterlimit:10;}
+</style>
+<pattern  x="7.5" y="7.5" width="4.66" height="4.66" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_2" viewBox="0 -4.66 4.66 4.66" style="overflow:visible;">
+	<g>
+		<rect y="-4.66" class="st0" width="4.66" height="4.66"/>
+		<g>
+			<path class="st1" d="M3.66-2.33c0,0.55,0.45,1,1,1v-2C4.11-3.33,3.66-2.88,3.66-2.33z"/>
+			<path class="st1" d="M1-2.33c0-0.55-0.45-1-1-1v2C0.55-1.33,1-1.78,1-2.33z"/>
+			<path class="st1" d="M2.33-1c-0.55,0-1,0.45-1,1h2C3.33-0.55,2.88-1,2.33-1z"/>
+			<path class="st1" d="M2.33-3.66c0.55,0,1-0.45,1-1h-2C1.33-4.11,1.78-3.66,2.33-3.66z"/>
+		</g>
+	</g>
+</pattern>
+<circle class="st2" cx="82.16" cy="82.2" r="75"/>
+<path class="st1" d="M30.83,40.89h97.38c1.69,0,3.07,1.38,3.07,3.07v73.16c0,1.69-1.38,3.07-3.07,3.07H30.83
+	c-1.69,0-3.07-1.38-3.07-3.07V43.96C27.76,42.27,29.14,40.89,30.83,40.89z"/>
+<path class="st3" d="M127.88,40.89H76.79l54.48,54.48V44.28C131.27,42.42,129.75,40.89,127.88,40.89z"/>
+<pattern  id="SVGID_1_" xlink:href="#New_Pattern_Swatch_2" patternTransform="matrix(0.6682 0 0 0.6682 -2494.6521 -2559.2168)">
+</pattern>
+<path class="st4" d="M127.88,40.89H76.79l54.48,54.48V44.28C131.27,42.42,129.75,40.89,127.88,40.89z"/>
+<path class="st5" d="M29.09,41.88c-0.61,0.61-1,1.46-1,2.4v72.51c0,1.52,1.01,2.81,2.39,3.24l0.23,0.06l83.5,18.31
+	c1.34,0.22,2.9,0.05,2.9-1.89v-16.34V62.92c0-1.55-1.16-3.33-2.57-3.95L31.72,41.11c-0.88-0.15-1.36-0.03-1.81,0.17"/>
+<path class="st6" d="M54.93,127.62l14.95,3.3l46.34,10.16c1.34,0.22,2.9,0.05,2.9-1.89v-16.34V65.6c0-1.55-1.16-3.33-2.57-3.95
+	L33.73,43.78c-0.89-0.23-2.16-0.39-2.76,0.15c-0.92,0.66-0.85,1.88-0.87,3.02c0,0,0,43.39,0,43.39c0.16,10.68,0.32,21.36,0.47,32.04
+	"/>
+<path class="st7" d="M117.12,120.18"/>
+<path class="st8" d="M107.16,121.79V68.58c0-0.97-0.72-2.08-1.6-2.48L41.93,53.16"/>
+<path class="st9" d="M29.09,41.89c-0.61,0.61-1,1.46-1,2.4v72.51c0,1.52,1.01,2.81,2.39,3.24l0.23,0.06l83.5,18.32
+	c1.33,0.22,2.9,0.05,2.9-1.89V62.92c0-1.55-1.16-3.33-2.57-3.95L31.72,41.11c-0.89-0.16-1.36-0.03-1.81,0.17"/>
+<path class="st10" d="M38.48,114.58"/>
+<path class="st7" d="M29.09,41.89c0.61-0.61,1.46-1,2.4-1h96.73c1.87,0,3.39,1.53,3.39,3.39v72.51c0,1.87-1.53,3.39-3.39,3.39h-11.1
+	"/>
+</svg>

@@ -1,0 +1,607 @@
+/*---------- EXTERNAL FONT ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*,
+*>::before,
+*>::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*--------------- CUSTOM VARIABLES ---------------*/
+:root {
+    --main-color: rgb(253, 136, 14);
+    --sub-color: rgb(48, 128, 194);
+    --grey: rgb(45, 57, 67);
+    --grey-light: rgb(65, 78, 88);
+    --white: rgb(241, 244, 246);
+    --orange: #EF6A00;
+}
+
+
+/*----------- HEADER NAVIGATION START -----------*/
+header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--grey-light);
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+header nav #logo img {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0 15px;
+    height: 100%;
+    width: fit-content;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header nav .right-navigation li {
+    list-style: none;
+    padding: 0 10px;
+    height: 100%;
+    width: fit-content;
+}
+
+header nav .right-navigation li a {
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+header nav .right-navigation li a span {
+    font-size: 0.65rem;
+}
+
+header nav .right-navigation li a #globe {
+    font-size: 1.25rem;
+}
+
+header nav .right-navigation li a:hover span {
+    text-decoration: underline;
+}
+
+header nav .right-navigation li a:hover #globe {
+    text-decoration: none;
+}
+
+
+/*--------- LOGIN & SIGN UP ---------*/
+.login-signup {
+    position: sticky;
+    width: 300px;
+    top: 0;
+    background-color: var(--grey);
+}
+
+
+/*---------- HERO -----------*/
+.hero {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../images/images/cs_personal_vw-split-wall_cover.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero div {
+    position: relative;
+    background-color: #ffffff12;
+    width: 650px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 45px 180px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 55px #00000054;
+    transform: translate(15%, 25%);
+}
+
+.hero div:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.hero div h1 {
+    font-size: 2.75rem;
+    color: var(--white);
+    text-shadow: 0px 0px 10px #0000009f;
+}
+
+.hero div p {
+    color: var(--white);
+    /* color: #000; */
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+.hero div .btn {
+    position: relative;
+    /* background-color: #0069aa; */
+    border: 2px solid var(--white);
+    padding: 15px 25px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    /* border-radius: 5px; */
+    transition:
+        color 500ms;
+    overflow: hidden;
+}
+
+.hero div .btn::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    width: 150%;
+    background-color: var(--white);
+    transform: skew(50deg);
+    translate: -105%;
+    z-index: -1;
+    transition: translate 300ms ease-out;
+}
+
+.hero div .btn:hover {
+    color: var(--orange);
+    box-shadow: 0px 0px 10px #0000007d;
+}
+
+.hero div .btn:hover::before {
+    translate: -30%;
+}
+
+
+/* -------- PRODUCTS AND SERVICES --------- */
+.products-and-services {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-block: 25px;
+}
+
+.products-and-services h1 {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--grey);
+    padding-block: 15px;
+}
+
+.products-and-services h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: var(--orange);
+}
+
+.products-and-services h3 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: var(--grey);
+}
+
+.service-list {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.service-list .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-list .service a {
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+    color: #004C97;
+    text-decoration: none;
+}
+
+
+
+/*---------------- FNANCIAL WELLNESS ----------------*/
+.financial-wellness {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/images/hero-financial-wellness_muted.jpeg);
+    padding-block: 50px 70px;
+}
+
+.financial-wellness div {
+    background-color: #ffffff50;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px #0000007d;
+    padding: 50px;
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.financial-wellness h1 {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--grey);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.financial-wellness h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: var(--orange);
+}
+
+.financial-wellness p {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: var(--grey);
+    text-align: center;
+}
+
+.financial-wellness a {
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+    color: #004C97;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.financial-wellness a:hover span:first-child {
+    text-decoration: underline;
+}
+
+
+
+/*----------- INSIGHTS -----------*/
+.insight {
+    width: 100%;
+    height: fit-content;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 50px;
+    gap: 20px;
+}
+
+.insight h1 {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--grey);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.insight h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 95%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: var(--orange);
+}
+
+.insight p {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: var(--grey);
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    width: 100%;
+    text-decoration: none;
+    padding: 0 20px;
+    color: inherit;
+    border-radius: 10px;
+}
+.card-img {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card-img img {
+    width: 100%;
+    transition: 400ms;
+}
+.card:hover .card-img img {
+    scale: 1.1;
+}
+
+.card h2 {
+    color: #084D77;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-block: 10px 15px;
+}
+.card span {
+    margin-bottom: 10px;
+}
+.card i {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.insight .view-more {
+    text-align: start;
+    width: 100%;
+    color: #084D77;
+    margin-top: 35px;
+}
+
+
+
+
+/*---------- MOBILE APP ----------*/
+.mobile-apps {
+    width: 100%;
+    height: fit-content;
+    background-color: #415A76;
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile-apps h1 {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.mobile-apps h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: var(--orange);
+}
+
+.mobile-apps p {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 35px;
+}
+.mobile-apps .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.mobile-apps .wrapper img {
+    width: 30%;
+}
+.mobile-apps .wrapper .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.mobile-apps .wrapper .content span {
+    font-size: 1.25rem;
+    color: var(--white);
+    width: 80%;
+}
+.mobile-apps .wrapper .content .learn-more {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.mobile-apps .wrapper .content .learn-more:hover {
+    text-decoration: underline;
+}
+
+
+
+/*--------- CONTACT US ---------*/
+.contact-us {
+    width: 100%;
+    height: fit-content;
+    background-color: #2E4867;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.contact-us h1 {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.contact-us h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: var(--orange);
+}
+
+.contacts-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+    text-align: center;
+    color: var(--white);
+}
+.contact h2 {
+    font-size: 2.125rem;
+}
+.contact p {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+.contact a {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+.contact a:hover span:first-child {
+    text-decoration: underline;
+}
+
+
+/*-------------- LEGAL DISCLOSURES --------------*/
+.legal-disclosures {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--grey);
+}
+.legal-disclosures button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    border: 0;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    cursor: pointer;
+}
+.legal-disclosures button:hover {
+    background-color: var(--grey-light);
+}
+.legal-disclosures button span {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.legal-disclosures button .add {
+    display: none;
+}
+.legal-disclosures .legal-content {
+    background-color: var(--grey-light);
+    color: var(--white);
+    padding: 70px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    line-height: 23px;
+}
+.legal-disclosures .legal-content img {
+    width: 60px;
+}
+.legal-disclosures .legal-content span,
+.legal-disclosures .legal-content ol {
+    font-weight: 300;
+}
+.legal-disclosures .legal-content a {
+    color: #fff;
+    font-weight: 400;
+}
+
+/* .legal-disclosures:focus-within .legal-content {
+    display: flex;
+}
+.legal-disclosures:focus-within .remove {
+    display: none;
+}
+.legal-disclosures:focus-within .add {
+    display: block;
+} */
