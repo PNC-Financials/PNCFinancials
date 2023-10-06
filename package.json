@@ -1,0 +1,11 @@
+{
+  "name": "pncfinancials",
+  "version": "1.0.0",
+  "description": "![PNC Financials Logo](https://www.pnc.com/content/experience-fragments/pnc-com/en/navigation/pnc-navigation---main-menu/master/_jcr_content/root/container/image.coreimg.svg/1657336133655/pnc-logo-rev.svg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
