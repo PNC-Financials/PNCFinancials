@@ -443,7 +443,7 @@ button {
 }
 
 .service-list .bitcoin img {
-    width: 20%;
+    width: 45px;
 }
 
 .service-list .service a {
@@ -704,6 +704,7 @@ button {
     color: var(--white);
     text-decoration: none;
     font-size: 1.125rem;
+    font-weight: 600;
 }
 
 .contact a:hover span:first-child {
@@ -790,6 +791,7 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
 .main-footer img {
     width: 5%;
 }
@@ -803,6 +805,7 @@ footer {
     gap: 10px;
     font-size: .9rem;
     color: #ffffffbc;
+    width: 50%;
 }
 
 .personal:hover,
@@ -810,6 +813,13 @@ footer {
 .on-the-go:hover,
 .about:hover {
     color: #fff;
+}
+
+.support .head,
+.on-the-go .head,
+.about .head {
+    font-weight: 800;
+    color: #ffffffd3;
 }
 
 .personal a,
@@ -852,6 +862,7 @@ footer {
 .about img {
     opacity: 0;
 }
+
 .footer-line {
     height: 1px;
     width: 100%;
@@ -866,21 +877,29 @@ footer {
     align-items: center;
     width: 100%;
 }
+
 .footer-links {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.footer-links span{
+
+.footer-links span {
     font-size: .75rem;
     color: #fff;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
 }
+
 .footer-links a {
     color: #fff;
     text-decoration: none;
-    padding-inline: 10px;
     font-weight: 300;
 }
+
 
 .footer-links a:hover {
     text-decoration: underline;
@@ -921,6 +940,19 @@ footer {
 
     .contacts-options {
         width: 100%;
+    }
+
+    .main-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .personal,
+    .support,
+    .on-the-go,
+    .about {
+        margin-bottom: 50px;
+        gap: 5px;
     }
 }
 
@@ -1002,6 +1034,10 @@ footer {
     .contact a {
         font-size: 1rem;
     }
+
+    footer {
+        padding: 100px 60px;
+    }
 }
 
 @media (width <=768px) {
@@ -1045,15 +1081,30 @@ footer {
     .contact {
         width: 50%;
     }
+
+    footer {
+        padding: 100px 40px;
+    }
 }
 
 @media (max-width <=478px) {
     .contact {
         width: 100%;
     }
+
     .contact p {
         font-size: 0.5rem;
     }
+
+    .legal-disclosures button span {
+        font-size: 1.125rem;
+    }
+
+    .legal-disclosures .legal-content span,
+    .legal-disclosures .legal-content ol {
+        font-size: 1rem;
+    }
+
 }
 
 @media (width <=453px) {
@@ -1062,8 +1113,30 @@ footer {
         gap: 15px;
     }
 
+    .contact {
+        width: 70%;
+    }
+
+    .contact p,
+    .contact a {
+        font-size: .9rem;
+    }
+
     .service {
         padding-top: 20px;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .personal,
+    .support,
+    .on-the-go,
+    .about {
+        width: 100%;
     }
 }
 
@@ -1119,5 +1192,17 @@ footer {
 @media (width <=320px) {
     .financial-wellness h1 {
         font-size: 1.75rem;
+    }
+}
+
+@media (width <=280px) {
+    .contact {
+        width: 100%;
+    }
+}
+
+@media (height >=1240px) {
+    .hero {
+        height: 40vh;
     }
 }
