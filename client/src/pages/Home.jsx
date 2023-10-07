@@ -7,17 +7,17 @@ const Home = () => {
     <header>
         <nav>
             <a href="index.html" id="logo">
-                {/* <img src="../images/images/pnc-logo-rev.svg" alt="PNC Logo"> */}
+                <img src="../images/images/pnc-logo-rev.svg" alt="PNC Logo"/>
             </a>
             <ul class="center-navigation">
                 <li>
-                    <a href="#">Personal</a>
+                    <a href="#services">Personal</a>
                 </li>
                 <li>
                     <a href="#services">Products & services</a>
                 </li>
                 <li>
-                    <a href="#">corporate & institutional</a>
+                    <a href="#services">corporate & institutional</a>
                 </li>
                 <li>
                     <a href="#">about</a>
