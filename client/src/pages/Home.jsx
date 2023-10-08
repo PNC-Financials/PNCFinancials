@@ -1,4 +1,7 @@
 import React from 'react'
+import { iconAutoLoansOrange, iconCheckingOrange, iconCreditCardsOrange, iconHomeOrange, iconRetirementOrange, iconSavingsOrange, pncInsightsPHowToVoidACheck, pncLogoRev } from '../assets'
+import Login from './Login'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -7,7 +10,7 @@ const Home = () => {
     <header>
         <nav>
             <a href="index.html" id="logo">
-                <img src="../images/images/pnc-logo-rev.svg" alt="PNC Logo"/>
+                <img src={pncLogoRev} alt="PNC Logo"/>
             </a>
             <ul class="center-navigation">
                 <li>
@@ -51,12 +54,14 @@ const Home = () => {
             </ul>
         </nav>
         <div class="login-signup">
-            <a href="#">
-                <span>LOG IN</span>
+            <Link to="/login">
+            <span>LOG IN</span>
                 <span class="material-symbols-outlined">
-                    login
+                    Login
                 </span>
-            </a>
+            </Link>
+                
+            
             <a href="#">
                 <span>CREATE ACCOUNT</span>
                 <span class="material-symbols-outlined">
@@ -87,7 +92,7 @@ const Home = () => {
         <h3>Explore and apply online.</h3>
         <div class="service-list">
             <div class="service">
-                {/* <img src="../images/images/icon-checking-orange.svg" alt=""> */}
+                <img src={iconCheckingOrange} alt=""/>
                 <a href="#">
                     <span>Checking</span>
                     <span class="material-symbols-outlined">
@@ -96,7 +101,7 @@ const Home = () => {
                 </a>
             </div>
             <div class="service">
-                {/* <img src="../images/images/icon-creditcards-orange.svg" alt=""> */}
+                <img src={iconCreditCardsOrange} alt=""/>
                 <a href="#">
                     <span>Credit Cards</span>
                     <span class="material-symbols-outlined">
@@ -105,7 +110,7 @@ const Home = () => {
                 </a>
             </div>
             <div class="service">
-                {/* <img src="../images/images/icon-savings-orange.svg" alt=""> */}
+                <img src={iconSavingsOrange} alt=""/>
                 <a href="#">
                     <span>Savings</span>
                     <span class="material-symbols-outlined">
@@ -114,7 +119,7 @@ const Home = () => {
                 </a>
             </div>
             <div class="service">
-                {/* <img src="../images/images/icon-home-orange.svg" alt=""> */}
+                <img src={iconHomeOrange} alt=""/>
                 <a href="#">
                     <span>Home Loans</span>
                     <span class="material-symbols-outlined">
@@ -123,7 +128,7 @@ const Home = () => {
                 </a>
             </div>
             <div class="service">
-                {/* <img src="../images/images/icon-retirement-orange.svg" alt=""> */}
+                <img src={iconRetirementOrange} alt=""/>
                 <a href="#">
                     <span>Retirement</span>
                     <span class="material-symbols-outlined">
@@ -132,7 +137,7 @@ const Home = () => {
                 </a>
             </div>
             <div class="service">
-                {/* <img src="../images/images/icon-auto-loans-orange.svg" alt=""> */}
+                <img src={iconAutoLoansOrange} alt=""/>
                 <a href="#">
                     <span>Auto Loans</span>
                     <span class="material-symbols-outlined">
@@ -164,7 +169,7 @@ const Home = () => {
         <div class="card-container">
             <a href="#" class="card">
                 <div class="card-img">
-                    {/* <img src="../images/images/pnc_insights_p_how-to-void-a-check.jpg" alt=""> */}
+                    <img src={pncInsightsPHowToVoidACheck} alt=""/>
                 </div>
                 <i>Spend</i>
                 <h2>How to Void a Check</h2>
