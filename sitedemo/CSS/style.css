@@ -17,10 +17,10 @@
     color: rgb(253, 136, 14);
 }
 body {
-    overflow: hidden;
+    overflow: auto;
 }
 body.scroll {
-    overflow: auto;
+    overflow: hidden;
 }
 
 

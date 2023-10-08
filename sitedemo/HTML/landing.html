@@ -482,20 +482,21 @@
 
 
     <script>
-        const menu = document.getElementById('menu');
-        const options = { };
-
-        const observer = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(entry => {
-                console.log(entry.target, document.body)
-                document.body.classList.toggle("scroll")
-            });
-        }, options);
-        observer.observe(menu);
+        // const options = { };
+        
+        // const observer = new IntersectionObserver(function(entries, observer) {
+        //     entries.forEach(entry => {
+        //         console.log(entry.target, document.body)
+        //         document.body.classList.toggle("scroll")
+        //     });
+        // }, options);
+        // observer.observe(menu);
 
 
         function openMenu() {
+            const menu = document.getElementById('menu');
             menu.classList.toggle("show")
+            document.body.classList.toggle("scroll")
         }
 
     </script>
