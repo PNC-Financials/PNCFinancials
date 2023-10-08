@@ -12,6 +12,10 @@
     scroll-behavior: smooth;
     /* outline: 1px solid red; */
 }
+*::selection {
+    background-color: white;
+    color: rgb(253, 136, 14);
+}
 
 
 /*--------------- CUSTOM VARIABLES ---------------*/
@@ -165,6 +169,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    pointer-events: none;
 }
 
 .menu__close span {
