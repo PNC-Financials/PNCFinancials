@@ -45,6 +45,25 @@ eth.onmessage = (event) => {
     console.log(currentPrice)
 }
 
+
+ltc.onmessage = (event) => {
+    let ltcCurPrice = document.getElementById("ltcLastprice")
+    let ltcPriceElement = document.getElementById('ltcPrice')
+    let stockObject = JSON.parse(event.data)
+    let price = parseFloat(stockObject.p).toFixed(2)
+    ltcCurPrice.innerHTML = price
+    let currentPrice = parseFloat(stockObject.p).toFixed(2)
+    ltcPriceElement.innerHTML = currentPrice
+
+    ltcPriceElement.style.color = !lastPrice || lastPrice === price ? "white" : price > lastPrice ? "#49d748" : "rgb(255, 52, 52)"
+
+
+
+    lastPrice = price
+    // console.log(lastPrice)
+    console.log(currentPrice)
+}
+
 teth.onmessage = (event) => {
     let tethPriceElement = document.getElementById('tethPrice')
     let stockObject = JSON.parse(event.data)
@@ -89,22 +108,4 @@ ada.onmessage = (event) => {
     let stockObject = JSON.parse(event.data)
     let currentPrice = parseFloat(stockObject.p).toFixed(2)
     adaPriceElement.innerHTML = currentPrice
-}
-
-ltc.onmessage = (event) => {
-    let ltcCurPrice = document.getElementById("ltcLastprice")
-    let ltcPriceElement = document.getElementById('ltcPrice')
-    let stockObject = JSON.parse(event.data)
-    let price = parseFloat(stockObject.p).toFixed(2)
-    ltcCurPrice.innerHTML = price
-    let currentPrice = parseFloat(stockObject.p).toFixed(2)
-    ltcPriceElement.innerHTML = currentPrice
-
-    ltcPriceElement.style.color = !lastPrice || lastPrice === price ? "white" : price > lastPrice ? "#49d748" : "rgb(255, 52, 52)"
-
-
-
-    lastPrice = price
-    // console.log(lastPrice)
-    console.log(currentPrice)
 }
