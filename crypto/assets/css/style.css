@@ -640,8 +640,11 @@ body.active { overflow: hidden; }
 
 .market-table .coin-name:is(:hover, :focus) { color: var(--blue-crayola); }
 
-.market-table :is(.rank, .last-price, .market-cap) { font-weight: var(--fw-700); }
-
+.market-table :is(.rank, .last-price, .market-cap) { font-weight: var(--fw-500); }
+h4 {
+  display: flex;
+  gap: 1px;
+}
 .market-table .btn-outline {
   border-width: 2px;
   padding-inline: 10px;
