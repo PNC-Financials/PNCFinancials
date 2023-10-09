@@ -31,9 +31,9 @@ const Home = () => {
                 <li>
                     <a href="null">
                         <span class="material-symbols-outlined" id="globe">
-                            language
+                            Language
                         </span>
-                        <span>Espanol</span>
+                        <span>English</span>
                     </a>
                 </li>
                 <li>
@@ -42,12 +42,12 @@ const Home = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="null">
                         <span>Locations</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="null">
                         <span>Security</span>
                     </a>
                 </li>
@@ -62,7 +62,7 @@ const Home = () => {
             </Link>
                 
             
-            <a href="#">
+            <a href="null">
                 <span>CREATE ACCOUNT</span>
                 <span class="material-symbols-outlined">
                     account_circle
