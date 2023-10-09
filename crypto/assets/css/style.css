@@ -20,15 +20,15 @@
    * colors
    */
 
-  /* --cadet-oran--orange: hsl(227, 13%, 73%); */
+  --cadet-oran--orange: hsl(227, 13%, 73%);
   --maximum-yellow-red: hsl(41, 95%, 61%);
   --medium-sea-green: hsl(142, 43%, 54%);
-  /* --orange_10: hsla(222, 100%, 61%, 0.05); */
+  --orange_10: hsla(222, 100%, 61%, 0.05);
   --smocky-black_30: hsla(0, 0%, 6%, 0.3);
-  /* --grey: hsl(240, 5%, 8%); */
+  --grey: hsl(240, 5%, 8%);
   --eerie-black-2: hsl(228, 9%, 10%);
   --raisin-black: hsl(225, 15%, 16%);
-  /* --orange: hsl(222, 100%, 61%); */
+  --orange: hsl(222, 100%, 61%);
   --roman-silver: hsl(223, 10%, 52%);
   --presian-red: hsl(0, 64%, 52%);
   --gunmetal_50: hsla(230, 16%, 22%, 0.5);

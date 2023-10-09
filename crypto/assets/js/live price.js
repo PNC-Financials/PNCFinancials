@@ -97,8 +97,8 @@ $.ajax(settings).done(function (response) {
 
 
     // ltc.innerText = response.litecoin.usd
-    // ltc2.innerText = response.litecoin.usd
-    // ltcMarket.innerText = response.litecoin.usd_market_cap
+    ltc2.innerText = response.litecoin.usd
+    ltcMarket.innerText = response.litecoin.usd_market_cap
     // ltcChange.innerText = response.litecoin.usd_24h_change
 
     bnb.innerText = response.binancecoin.usd
