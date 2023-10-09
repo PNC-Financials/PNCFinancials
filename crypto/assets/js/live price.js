@@ -103,7 +103,7 @@ $.ajax(settings).done(function (response) {
 
     bnb.innerText = response.binancecoin.usd
     bnb2.innerText = response.binancecoin.usd
-    bnbMarket.innerText = response.binancecoin.usd
+    bnbMarket.innerText = response.binancecoin.usd_market_cap
     bnbChange.innerText = response.binancecoin.usd_24h_change
 
     // avax.innerText = response.avalanche2.usd
