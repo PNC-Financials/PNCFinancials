@@ -186,6 +186,7 @@ body.active {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--orange);
+  border-radius: 100px;
 }
 
 
