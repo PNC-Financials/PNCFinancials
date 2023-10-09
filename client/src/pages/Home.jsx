@@ -23,13 +23,13 @@ const Home = () => {
                     <a href="#services">corporate & institutional</a>
                 </li>
                 <li>
-                    <a href="#">about</a>
+                    <a href="#about">about</a>
                 </li>
             </ul>
 
             <ul class="right-navigation">
                 <li>
-                    <a href="#">
+                    <a href="null">
                         <span class="material-symbols-outlined" id="globe">
                             language
                         </span>
@@ -37,7 +37,7 @@ const Home = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="null">
                         <span>Customer Service</span>
                     </a>
                 </li>

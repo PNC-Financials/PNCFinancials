@@ -1,11 +1,13 @@
+//Welcome to our pretty little project
+//All dependencies
 import React from "react";
-import { Outlet, Navigate, Route, Routes, useLocation } from "react-router-dom";
-import { Home, Login, Profile, Register, ResetPassword, Crypto, Loader } from "./pages";
+import { Outlet, Navigate, Route, Routes, useLocation } from "react-router-dom"; 
+import { Home, Login, Profile, Register, ResetPassword, Crypto, Loader } from "./pages"; //All pages currently
 import { useSelector } from "react-redux";
 import { BrowserRouter } from 'react-router-dom';
 
 function Layout() {
-  const { user } = useSelector((state) => state.user);
+  const { user } = useSelector((state) => state.user); //Type "localhost:3000" in your browser, it should work
   const location = useLocation();
 
   return user?.token ? (
