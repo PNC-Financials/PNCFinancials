@@ -10,12 +10,14 @@ let ltc = new WebSocket('wss://stream.binance.com:9443/ws/ltcusdt@trade')
 let lastPrice = null
 
 btc.onmessage = (event) => {
+    let btcCurPrice1 = document.getElementById("btcCurPrice1")
     let btcCurPrice = document.getElementById("btcLastprice")
     let btcPriceElement = document.getElementById('btcPrice')
     let stockObject = JSON.parse(event.data)
     let price = parseFloat(stockObject.p).toFixed(2)
     btcCurPrice.innerHTML = price
     let currentPrice = parseFloat(stockObject.p).toFixed(2)
+    btcCurPrice1.innerHTML = currentPrice
     btcPriceElement.innerHTML = currentPrice
 
     btcPriceElement.style.color = !lastPrice || lastPrice === price ? "white" : price > lastPrice ? "#49d748" : "rgb(255, 52, 52)"
@@ -29,10 +31,12 @@ btc.onmessage = (event) => {
 
 eth.onmessage = (event) => {
     let ethCurPrice = document.getElementById("ethLastprice")
+    let ethCurPrice1 = document.getElementById("ethCurPrice1")
     let ethPriceElement = document.getElementById('ethPrice')
     let stockObject = JSON.parse(event.data)
     let price = parseFloat(stockObject.p).toFixed(2)
     ethCurPrice.innerHTML = price
+    ethCurPrice1.innerHTML = price
     let currentPrice = parseFloat(stockObject.p).toFixed(2)
     ethPriceElement.innerHTML = currentPrice
 
@@ -48,10 +52,12 @@ eth.onmessage = (event) => {
 
 ltc.onmessage = (event) => {
     let ltcCurPrice = document.getElementById("ltcLastprice")
+    let ltcCurPrice1 = document.getElementById("ltcCurPrice1")
     let ltcPriceElement = document.getElementById('ltcPrice')
     let stockObject = JSON.parse(event.data)
     let price = parseFloat(stockObject.p).toFixed(2)
     ltcCurPrice.innerHTML = price
+    ltcCurPrice1.innerHTML = price
     let currentPrice = parseFloat(stockObject.p).toFixed(2)
     ltcPriceElement.innerHTML = currentPrice
 
