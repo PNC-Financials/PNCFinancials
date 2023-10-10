@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PNC Log On</title>
+    <title>PNC Account</title>
 
     <!-- link to favicon -->
     <link rel="shortcut icon" type="image/png" href="../images/favicon/favicon.png" />
@@ -29,7 +29,8 @@
             <form>
                 <!-- CHECK & SIGN UP -->
                 <label for="check" aria-hidden="true">Sign up</label>
-                <input type="text" name="text" placeholder="User name" required>
+                <input type="text" name="firstname" placeholder="First Name" required>
+                <input type="text" name="lastname" placeholder="Last Name" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="Password" placeholder="Password" required>
                 <button>Sign up</button>
@@ -42,10 +43,12 @@
             <form>
                 <!-- CHECK & Log in -->
                 <label for="check" aria-hidden="true">Log in</label>
-                <input type="text" name="text" placeholder="User name" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="Password" placeholder="Password" required>
                 <button>Log in</button>
+                <div class="a">
+                <a href="#">Forgot password?</a>
+            </div>
             </form>
 
         </div>
