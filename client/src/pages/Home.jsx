@@ -23,31 +23,31 @@ const Home = () => {
                     <a href="#services">corporate & institutional</a>
                 </li>
                 <li>
-                    <a href="#">about</a>
+                    <a href="#about">about</a>
                 </li>
             </ul>
 
             <ul class="right-navigation">
                 <li>
-                    <a href="#">
+                    <a href="null">
                         <span class="material-symbols-outlined" id="globe">
-                            language
+                            Language
                         </span>
-                        <span>Espanol</span>
+                        <span>English</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="null">
                         <span>Customer Service</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="null">
                         <span>Locations</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="null">
                         <span>Security</span>
                     </a>
                 </li>
@@ -62,7 +62,7 @@ const Home = () => {
             </Link>
                 
             
-            <a href="#">
+            <a href="null">
                 <span>CREATE ACCOUNT</span>
                 <span class="material-symbols-outlined">
                     account_circle
