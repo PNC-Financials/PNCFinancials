@@ -17,8 +17,8 @@ btc.onmessage = (event) => {
     let price = parseFloat(stockObject.p).toFixed(2)
     btcCurPrice.innerHTML = price
     let currentPrice = parseFloat(stockObject.p).toFixed(2)
-    btcCurPrice1.innerHTML = currentPrice
-    btcPriceElement.innerHTML = currentPrice
+    btcCurPrice1.innerHTML = price
+    btcPriceElement.innerHTML = price
 
     btcPriceElement.style.color = !lastPrice || lastPrice === price ? "white" : price > lastPrice ? "#49d748" : "rgb(255, 52, 52)"
 
@@ -79,10 +79,12 @@ teth.onmessage = (event) => {
 
 bnb.onmessage = (event) => {
     let bnbCurPrice = document.getElementById("bnbLastprice")
+    let bnbCurPrice1 = document.getElementById("bnbCurPrice1")
     let bnbPriceElement = document.getElementById('bnbPrice')
     let stockObject = JSON.parse(event.data)
     let price = parseFloat(stockObject.p).toFixed(2)
     bnbCurPrice.innerHTML = price
+    bnbCurPrice1.innerHTML = price
     let currentPrice = parseFloat(stockObject.p).toFixed(2)
     bnbPriceElement.innerHTML = currentPrice
 
