@@ -115,7 +115,10 @@ button:hover{
     transition: 0.5s;
 }
 .login .a:hover{
-    transition: 0.2s;
+    transition: 0.5s;
     transform: scale(1.09);
     text-decoration: underline rgb(253,136,14);
+}
+.login .a:active{
+    color: rgb(48,128,194);
 }
