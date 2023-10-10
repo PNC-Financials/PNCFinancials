@@ -15,6 +15,7 @@
 
     <style>
         section {
+            margin-top: 50px;
             position: relative;
             width: 100%;
             height: 100vh;
@@ -35,7 +36,155 @@
     </header>
 
     <section>
-        
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
+                async>
+                    {
+                        "width": "100%",
+                            "height": "100%",
+                                "symbolsGroups": [
+                                    {
+                                        "name": "Forex",
+                                        "originalName": "Forex",
+                                        "symbols": [
+                                            {
+                                                "name": "FX:EURUSD",
+                                                "displayName": "EUR to USD"
+                                            },
+                                            {
+                                                "name": "FX:GBPUSD",
+                                                "displayName": "GBP to USD"
+                                            },
+                                            {
+                                                "name": "FX:USDJPY",
+                                                "displayName": "USD to JPY"
+                                            },
+                                            {
+                                                "name": "FX:USDCHF",
+                                                "displayName": "USD to CHF"
+                                            },
+                                            {
+                                                "name": "FX:AUDUSD",
+                                                "displayName": "AUD to USD"
+                                            },
+                                            {
+                                                "name": "FX:USDCAD",
+                                                "displayName": "USD to CAD"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Crypto",
+                                        "symbols": [
+                                            {
+                                                "name": "BINANCE:BTCUSDT",
+                                                "displayName": "BTCUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:ETHUSDT",
+                                                "displayName": "ETHUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:SOLUSDT",
+                                                "displayName": "SOLUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:XRPUSDT",
+                                                "displayName": "XRPUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:LINKUSDT",
+                                                "displayName": "LINKUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:MATICUSDT",
+                                                "displayName": "MATICUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:BNBUSDT",
+                                                "displayName": "BNBUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:XRPUSDT",
+                                                "displayName": "XRPUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:ADAUSDT",
+                                                "displayName": "ADAUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:AVAXUSDT",
+                                                "displayName": "AVAXUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:DOGEUSDT",
+                                                "displayName": "DOGEUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:DOTUSDT",
+                                                "displayName": "DOTUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:RUNEUSDT",
+                                                "displayName": "RUNEUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:ARBUSDT",
+                                                "displayName": "ARBUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:OPUSDT",
+                                                "displayName": "OPUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:FTMUSDT",
+                                                "displayName": "FTMUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:GALAUSDT",
+                                                "displayName": "GALAUSDT"
+                                            },
+                                            {
+                                                "name": "COINBASE:SOLUSD",
+                                                "displayName": "SOLUSD"
+                                            },
+                                            {
+                                                "name": "BINANCE:APTUSDT",
+                                                "displayName": "APTUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:STORJUSDT",
+                                                "displayName": "STORJUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:SHIBUSDT",
+                                                "displayName": "SHIBUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:DYDXUSDT",
+                                                "displayName": "DYDXUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:RNDRUSDT",
+                                                "displayName": "RNDRUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:AAVEUSDT",
+                                                "displayName": "AAVEUSDT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                    "showSymbolLogo": true,
+                                        "colorTheme": "dark",
+                                            "isTransparent": true,
+                                                "locale": "en"
+                    }
+                </script>
+        </div>
+        <!-- TradingView Widget END -->
     </section>
 
 </body>
